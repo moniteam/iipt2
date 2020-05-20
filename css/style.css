@@ -1,0 +1,266 @@
+/* Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/* Конец обнуления */
+
+header {
+    background-color: lightgoldenrodyellow;
+    height: 140px;
+}
+
+.logo_image {
+    background-image: url('../img/logo_goldenrod.svg');
+    max-width: 120px;
+    min-width: 120px;
+    min-height: 120px;
+    max-height: 120px;
+    transition: .1s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo_image:hover {
+    background-image: url('../img/logo.svg');
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.hello_text_wrapper {
+    font-size: 36px;
+    text-align: center;
+    font-family: "Russo One";
+    font-weight: bolder;
+    color: goldenrod;
+    line-height: 45px;
+}
+
+.greetings {
+    display: flex;
+    background-color: lightcyan;
+    align-content: center;
+    margin-top: 30px;
+    order: 2;
+}
+.greetings_speech {
+    align-self: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+}
+
+.dir_img {
+    transform: scale(0.95);
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.container_flex {
+    display: flex;
+    flex-direction: column;
+}
+.header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_link {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main_link_wrapper {
+    align-self: stretch;
+    height: 50px;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+    border-radius: 2px;
+    text-align: center;
+    font-family: "Russo One";
+    color: lightgoldenrodyellow;
+}
+.main_link_wrapper:hover {
+    color: goldenrod;
+    background-color: seashell;
+    transition: 0.3s;
+}
+
+.content_nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    order: 1;
+}
+
+.link_wrapper {
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    color: black;
+    font-weight: bold;
+    transition: 0.2s;
+    border-radius: 2px;
+}
+.main_link_name {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 30px;
+}
+
+.hover_description {
+    text-align: center;
+    background-color: rgba(29, 67, 30, 0.66);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    align-self: stretch;
+}
+
+.link_wrapper:hover {
+    background-color: rgba(29, 67, 30, 0.33);
+    color: white;
+    transition: 0.3s;
+    align-items: space-around;
+    transform: scale(1.1);
+}
+.link_wrapper:hover .main_link_name{
+    background-color: rgba(29, 67, 30, 0.66);
+}
+.link_wrapper:hover .hover_description {
+    visibility: visible;
+    opacity: 1;
+}
+
+.link_1 {
+    background: url('..//img/history.jpg');
+    background-size: cover;
+}
+.link_2 {
+    background: url('..//img/structure.png') no-repeat;
+    background-size: cover;
+}
+.link_3 {
+    background: url('..//img/technology.jpg') no-repeat;
+    background-size: cover;
+}
+.link_4 {
+    background: url('..//img/equipment.jpg') no-repeat;
+    background-size: cover;
+}
+.link_5 {
+    background: url('..//img/works.jpg') no-repeat;
+    background-size: cover;
+}
+.link_6 {
+    background: url('..//img/scint_works.jpg') no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-color: lightgoldenrodyellow;
+    color: goldenrod;
+    min-height: 200px;
+    margin-top: 30px;
+    padding-bottom: 15px;
+}
+
+.footer_flex_wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+iframe {
+    align-self: stretch;
+    min-height: 450px;
+}
+
+address {
+    margin-top: 30px;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 16px;
+    font-family: "Russo One";
+}
+
+iframe {
+    margin-top: 30px;
+}
+
+.end {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: "Russo One";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: "Russo One"; 
+    src: url("../fonts/Russo_One/RussoOne-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
