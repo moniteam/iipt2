@@ -82,7 +82,8 @@ header {
     margin-left: 10px;
 }
 
-.dir_img {
+.dir_img_wrapper {
+    
     transform: scale(0.95);
 }
 
@@ -188,7 +189,7 @@ header {
 }
 .link_2 {
     background: url('..//img/structure.png') no-repeat;
-    background-size: cover;
+    background-size: center / cover;
 }
 .link_3 {
     background: url('..//img/technology.jpg') no-repeat;
@@ -241,6 +242,7 @@ address a {
 
 address a:hover {
     color: #975316;
+    transition: .3s;
 }
 
 address a:active {
