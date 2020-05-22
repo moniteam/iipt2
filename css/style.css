@@ -189,7 +189,7 @@ header {
 }
 .link_2 {
     background: url('..//img/structure.png') no-repeat;
-    background-size: center / cover;
+    background-size: cover;
 }
 .link_3 {
     background: url('..//img/technology.jpg') no-repeat;
