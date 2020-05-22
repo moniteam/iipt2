@@ -235,6 +235,18 @@ address {
     font-family: "Russo One";
 }
 
+address a {
+    color: #da7720;
+}
+
+address a:hover {
+    color: #975316;
+}
+
+address a:active {
+    color: burlywood;
+}
+
 iframe {
     margin-top: 30px;
 }
